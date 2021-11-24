@@ -1,0 +1,2 @@
+language = "python3"
+run = "echo 'Use o Shell para executar os scripts: python nome_do_arquivo.py'"

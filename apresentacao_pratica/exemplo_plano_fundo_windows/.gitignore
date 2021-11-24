@@ -1,0 +1,8 @@
+
+# just commit images that starts with "dark"
+/img/dark/*
+!/img/dark/dark*
+
+# just commit images that starts with "light"
+/img/light/*
+!/img/light/light*
