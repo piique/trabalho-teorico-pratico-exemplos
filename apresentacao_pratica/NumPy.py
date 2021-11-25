@@ -2,7 +2,7 @@
 
 # importando biblioteca e confirmando a versão
 import numpy as np
-print("Versão Numpy:", np.version)
+print("Versão Numpy:", np.__version__)
 print()
 input()
 
