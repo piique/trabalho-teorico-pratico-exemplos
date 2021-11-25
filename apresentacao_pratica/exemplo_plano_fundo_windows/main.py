@@ -1,6 +1,4 @@
 import ctypes
-# from posixpath import dirname
-import time
 import os
 import random
 import sys
@@ -14,13 +12,10 @@ defaultWallpaper = defaultWallpaperPath + "img4.jpg"
 
 def swap(fullPath):
     ctypes.windll.user32.SystemParametersInfoW(20, 0, fullPath, 0)
-    # time.sleep(120)
-    # ctypes.windll.user32.SystemParametersInfoW(
-    #     20, 0, defaultWallpaper, 0)
 
 
-def getRandomImgPath(vibe):
-    imgsPath = directory + "\img\\" + vibe + "\\"
+def getRandomImgPath(type):
+    imgsPath = directory + "\img\\" + type + "\\"
     img = random.choice(os.listdir(imgsPath))
     return imgsPath + img
 
@@ -46,5 +41,4 @@ if len(sys.argv) > 1:
     # print(path)
     swap(path)
 else:
-    ctypes.windll.user32.SystemParametersInfoW(
-        20, 0, defaultWallpaper, 0)
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, defaultWallpaper, 0)
